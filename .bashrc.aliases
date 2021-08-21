@@ -1,0 +1,138 @@
+# list
+# alias l='ls -lah'
+
+# Insall deb
+alias ideb='sudo dpkg -i '
+alias i-f='sudo apt-get install -f'
+
+# Personal Alias
+alias cls=clear
+alias la='ls -al'
+alias ls='ls -GFh'
+
+# editalias
+## linux
+# alias editalias='gedit ~/.bashrc &'
+alias editalias='code ~/.bashrc'
+## mac
+#alias editalias='code ~/.bash_profile'
+alias editvs='code ~/Development/vs_shortcuts.js'
+## folders shortcuts
+alias dt='cd ~/Desktop'
+alias dv='cd ~/Desktop/development'
+alias dl='cd ~/Downloads'
+alias tut='cd ~/Desktop/development/tutorials'
+alias bp='cd ~/Desktop/development/boilerplates'
+## #alfan
+alias dv-f='cd ~/Desktop/development/alfan'
+## #cya
+alias cya='cd ~/Desktop/development/cya'
+alias cyafe='cd ~/Desktop/development/cya/af-vueui-src'
+alias cyafe-edit='cd ~/Desktop/development/cya/af-vueui-src && code .'
+alias cya-vpn='cd ~/Desktop/development/cya/keys/newKeys/ && sudo openvpn --config mohamed.ovpn'
+# git
+alias g-cl='git clone '
+alias g-c='git checkout '
+alias g-cb='git checkout -b '
+alias g-b='git branch'
+alias g-d='git branch -d '
+alias g-s='git status '
+alias g-ps='git push '
+alias g-psu='git push -u origin HEAD'
+alias g-pl='git pull '
+alias g-l='git log '
+
+# yarn / npm
+alias rnm-n='rm -rf node_modules && fnm use && npm install'
+alias rnm-y='rm -rf node_modules && nvm use && yarn'
+## nvm
+# alias ys='nvm use && yarn start '
+# alias uys='nvm use && yarn start '
+# alias ya='yarn add '
+# alias ysi='nvm use && yarn start:inspect '
+# alias uysi='nvm use && yarn start:inspect '
+# alias ns='nvm use && npm run start'
+# alias nsi='nvm use && npm start:inspect '
+# alias nrd='nvm use && npm run dev'
+# alias unrd='nvm use && npm run dev'
+# alias nrsv='nvm use && npm run serve'
+# alias unrsv='nvm use && npm run serve'
+## fnm
+alias ys='fnm use && yarn start '
+alias uys='fnm use && yarn start '
+alias ya='yarn add '
+alias ysi='fnm use && yarn start:inspect '
+alias uysi='fnm use && yarn start:inspect '
+alias ns='fnm use && npm run start'
+alias nsi='fnm use && npm start:inspect '
+alias nrd='fnm use && npm run dev'
+alias unrd='fnm use && npm run dev'
+alias nrsv='fnm use && npm run serve'
+alias unrsv='fnm use && npm run serve'
+
+
+# react
+alias cra='npx create-react-app '
+cra-ts() {
+ npx create-react-app $1 --template typescript
+}
+
+# create .nvmrc
+cr-nvm() {
+  nodeVersion="14.17.0"
+  if [ -n "$1" ]
+   then
+    nodeVersion=$1
+  fi
+  echo "creating .nvmrc with v${nodeVersion}"
+  echo $nodeVersion > .nvmrc
+}
+
+# ionic
+alias ire="nvm use && ionic repair"
+alias ib='ionic build'
+alias is='nvm use && ionic serve'
+alias isa='nvm use && ionic cap run android -l --external'
+alias isi='ionic cap run ios -l --external'
+alias isl='ionic serve --lab '
+alias ic='ionic cap copy'
+alias isy='ionic cap sync'
+alias iaa='ionic cap add android'
+alias iai='ionic cap add ios'
+alias io='ionic cap open'
+alias ioa='ionic cap open android'
+alias iu='ionic cap update'
+alias ioi='ionic cap open ios'
+alias iui='npx cap update ios'
+alias ibc='ionic build && ionic cap copy'
+alias ibca='ionic build && ionic cap copy && ionic cap open android'
+alias ibci='ionic build && ionic cap copy && ionic cap open ios'
+alias ic-res=' cordova-res --skip-config --copy  '
+
+# docker
+alias dkps="docker ps"
+alias dkst="docker stats"
+alias dkpsa="docker ps -a"
+alias dkimgs="docker images"
+alias dkcpup="docker-compose up"
+alias dkcpup-d="docker-compose up -d"
+alias dkcpdown="docker-compose down"
+alias dkcpstart="docker-compose start"
+alias dkcpstop="docker-compose stop"
+
+# docker-extras
+alias lzd='lazydocker'
+
+# vercel-deployment
+alias vercel-dev='vercel'
+alias vercel-prod='vercel --prod'
+
+
+
+# Personal functions
+
+# mk dir, then cd in
+mkcd () {
+  mkdir "$1"
+  cd "$1"
+}
