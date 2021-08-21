@@ -1,0 +1,89 @@
+{
+  "vetur.useWorkspaceDependencies": true,
+  // "editor.fontFamily": "Fira Code",
+  // "editor.fontFamily": "FiraCode-Retina",
+  // "editor.fontFamily": "Fira Code Retina",
+  // "editor.fontSize": 14,
+  "editor.fontSize": 13,
+  // "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
+  // "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.fontWeight": "300",
+  // "editor.letterSpacing": 1.2,
+  // "editor.lineHeight": 22,
+  // "editor.fontWeight": "bold",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.hidesExplorerArrows": false,
+  "material-icon-theme.saturation": 1,
+  // "editor.wordWrap": "on",
+  "editor.snippetSuggestions": "top",
+  "sync.gist": "3558a7bdc197cc0452360aa32802c7b7",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "workbench.editor.showTabs": true,
+  "color-highlight.markerType": "outline",
+  "liveServer.settings.donotShowInfoMsg": true,
+  // "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontFamily": "monospace",
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    // "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.requireConfig": true,
+  "prettier.singleQuote": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+},
+  "cSpell.userWords": [
+    "Appflow",
+    "Gomaa",
+    "Highcharts",
+    "Parens",
+    "Signup",
+    "alfan",
+    "feathersjs",
+    "openid",
+    "youtube"
+  ],
+  "git.autofetch": true,
+  "eslint.options": {},
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "typescriptreact",
+    "typescript"
+  ],
+  "editor.formatOnSave": true,
+  "grammarly.userWords": [
+    "alfan",
+    "github",
+    "openid"
+  ],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "todo-tree.tree.showScanModeButton": false,
+  "prettier.packageManager": "yarn",
+  "eslint.alwaysShowStatus": true,
+  "eslint.lintTask.enable": true,
+  "eslint.format.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "html.format.contentUnformatted": "",
+  "diffEditor.renderSideBySide": true,
+  "tabnine.experimentalAutoImports": true
+}
